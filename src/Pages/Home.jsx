@@ -1,0 +1,9 @@
+function Home(){
+    return (
+        <>
+        <div className="">Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.Hy my name is Aditya Kumar. Welcome to my portfolio.</div>
+        </>
+    );
+}
+
+export default Home;
