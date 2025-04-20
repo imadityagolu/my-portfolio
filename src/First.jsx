@@ -1,5 +1,4 @@
 import Header from './Header';
-import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
 
 function First() {
@@ -9,7 +8,6 @@ function First() {
 
             <Outlet/>
 
-        <Footer/>
         </>
     );
 }
