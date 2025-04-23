@@ -3,6 +3,7 @@ import P1 from '../p-1.png';
 import P2 from '../p-2.png';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Home(){
     return (
@@ -48,7 +49,7 @@ function Home(){
         </li>
         </ul>
     
-        <a className="hidden cursor-pointer text-center md:block py-2 px-4 text-white bg-black rounded-lg text-[16px] transition-all duration-300 hover:bg-gray-800" href="#contact">Hire Me</a>
+        <Link className="hidden cursor-pointer text-center md:block py-2 px-4 text-white bg-black rounded-lg text-[16px] transition-all duration-300 hover:bg-gray-800" to="/HireMe">Hire Me</Link>
     
         <button className="text-2xl block md:hidden cursor-pointer transition-transform duration-300">
     
