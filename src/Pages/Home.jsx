@@ -4,8 +4,17 @@ import P2 from '../p-2.png';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Home(){
+
+    const [flag, setFlag] = useState(false);
+
+
+  function handleClick() {
+    setFlag(!flag);
+  }
+
     return (
         <>
 
@@ -51,16 +60,27 @@ function Home(){
     
         <Link className="hidden cursor-pointer text-center md:block py-2 px-4 text-white bg-black rounded-lg text-[16px] transition-all duration-300 hover:bg-gray-800" to="/HireMe">Hire Me</Link>
     
-        <button className="text-2xl block md:hidden cursor-pointer transition-transform duration-300">
-    
-        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
-    
+        <button className="text-2xl block md:hidden cursor-pointer transition-transform duration-300" onClick={handleClick}
+          >
+            {flag ? (
+              <div className="transition-transform duration-300 rotate-90" > X </div>
+            ) : (
+
+                <Link to="" onClick={() => setFlag(false)}>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></Link>
+            
+            )}
         </button>
     </div>
     
     </nav>
     
-    <section className="md:hidden fixed top-16 left-0 w-full bg-white shadow-md z-50 transition-all duration-500 ease-in-out transform opacity-0 translate-y-10 pointer-events-none">
+    <section className={`md:hidden fixed top-6 left-0 w-full bg-white shadow-md z-50 transition-all duration-500 ease-in-out transform opacity-0 translate-y-10 pointer-events-none" ${
+          flag
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10 pointer-events-none"
+        }`}>
     
         <div className="p-4 space-y-2">
         <a className="block font-normal py-2 text-gray-900 hover:text-gray-600 text-center active:text-gray-800 transition-all duration-300 relative after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 after:origin-center hover:after:w-full after:-translate-x-1/2" href="/">
@@ -92,7 +112,7 @@ function Home(){
                 
                 <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl">Hi, I'm ADITYA KUMAR.</h1>
     
-                <p className="index-module_type__E-SaG text-[22px] text-gray-950 font-medium md:text-2xl lg:text-3xl">Full Stack Develop</p>
+                <p className="index-module_type__E-SaG text-[22px] text-gray-950 font-medium md:text-2xl lg:text-3xl">Full Stack Developer</p>
     
             <div className="text-wrap w-full max-w-md md:max-w-lg aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
     
