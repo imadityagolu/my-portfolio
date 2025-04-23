@@ -78,7 +78,7 @@ function Home(){
         <a className="block font-normal py-2 text-gray-900 hover:text-gray-600 text-center active:text-gray-800 transition-all duration-300 relative after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 after:origin-center hover:after:w-full after:-translate-x-1/2" href="#contact">
         Contact</a>
     
-        <a className="block cursor-pointer py-2 mt-4 text-center text-white bg-black rounded-lg text-[14px] hover:bg-gray-800 transition-all duration-300">Hire Me</a>
+        <Link className="block cursor-pointer py-2 mt-4 text-center text-white bg-black rounded-lg text-[14px] hover:bg-gray-800 transition-all duration-300"to="/HireMe">Hire Me</Link>
     
     </div>
     
@@ -102,19 +102,19 @@ function Home(){
     
             <div className="flex items-center gap-2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 
-            <a className="flex gap-3 text-[14px] cursor-pointer items-center text-white bg-black hover:bg-gray-800 px-4 py-2 rounded-md" href="#contact">
+            <Link className="flex gap-3 text-[14px] cursor-pointer items-center text-white bg-black hover:bg-gray-800 px-4 py-2 rounded-md" to="/HireMe">
             
-            <span>Contact Me</span>
+            <span>Hire Me</span>
             
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
     
             <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path>
     
             </svg>
-            </a>
+            </Link>
     
-            <a className="flex gap-2 text-[14px] items-center cursor-pointer text-black bg-white px-4 py-2 border border-gray-300 hover:bg-gray-100 rounded-md" href="https://vercel.com/aditya-kumars-projects-a1b7703f">   
-            View Projects</a>
+            <a className="flex gap-2 text-[14px] items-center cursor-pointer text-black bg-white px-4 py-2 border border-gray-300 hover:bg-gray-100 rounded-md" href="#contact">
+            Contact</a>
             
             </div>
     
