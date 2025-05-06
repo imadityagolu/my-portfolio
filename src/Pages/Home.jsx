@@ -3,6 +3,25 @@ import P1 from '../p-1.png';
 import P2 from '../p-2.png';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { TbBrandJavascript } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaReact } from "react-icons/fa6";
+import { FaGitAlt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
+import { RiNextjsLine } from "react-icons/ri";
+import { DiNodejs } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
+import { BiLogoMongodb } from "react-icons/bi";
+import { BiLogoFigma } from "react-icons/bi";
+import { VscVscode } from "react-icons/vsc";
+import { FaPhp } from "react-icons/fa";
+import { AiOutlineApi } from "react-icons/ai";
+import { MdDataObject } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -18,7 +37,9 @@ function Home(){
     return (
         <>
 
-    <div id="root"><nav className="w-full py-4 px-2 sticky bg-transparent backdrop-blur-md top-0 z-50 transition-all duration-300">
+    <div id="root">
+        
+    <nav className="w-full py-4 px-2 sticky bg-transparent backdrop-blur-md top-0 z-50 transition-all duration-300">
     
     <div className="flex justify-between items-center mx-2">
     
@@ -30,7 +51,7 @@ function Home(){
     
         <li className="text-gray-600 hover:text-gray-900 active:text-gray-800 cursor-pointer transition-colors duration-300 ease-in-out">
     
-        <a className="relative inline-block transition-all duration-300 after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 after:origin-center hover:after:w-full after:-translate-x-1/2" href="/">
+        <a className="relative inline-block transition-all duration-300 after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 after:origin-center hover:after:w-full after:-translate-x-1/2" href="#home">
         Home</a>
         </li>
 
@@ -83,7 +104,7 @@ function Home(){
         }`}>
     
         <div className="p-4 space-y-2">
-        <a className="block font-normal py-2 text-gray-900 hover:text-gray-600 text-center active:text-gray-800 transition-all duration-300 relative after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 after:origin-center hover:after:w-full after:-translate-x-1/2" href="/">
+        <a className="block font-normal py-2 text-gray-900 hover:text-gray-600 text-center active:text-gray-800 transition-all duration-300 relative after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 after:origin-center hover:after:w-full after:-translate-x-1/2" href="#home">
         Home</a>
     
         <a className="block font-normal py-2 text-gray-900 hover:text-gray-600 text-center active:text-gray-800 transition-all duration-300 relative after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 after:origin-center hover:after:w-full after:-translate-x-1/2" href="#about">
@@ -104,7 +125,7 @@ function Home(){
     
     </section>
     
-    <div>
+    <div id="home">
 
     <section className="px-1 md:px-15 py-10 w-[100%]">
         <div className="mt-4 mx-2 space-y-4 flex flex-col justify-between items-center md:flex-row p-2">
@@ -241,49 +262,144 @@ function Home(){
         
         </div>
                                     
-        <div className="mt-4 w-full aos-init" data-aos="zoom-in" data-aos-delay="500" id="skills">
+        <div className="mt-4 w-[90%] aos-init" data-aos="zoom-in" data-aos-delay="500" id="skills">
             
             <h1 className="text-2xl font-bold mb-6 mt-20 text-center">My Skills</h1>
                                         
             <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6">
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="0">Java</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="0">
+            <div className='place-content-center flex'>
+                <FaJava className="text-5xl flex text-blue-500 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'> java </p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="100">Javascript</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="100">
+            <div className='place-content-center flex'>
+                <TbBrandJavascript className="text-5xl flex text-red-500 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'>Javascript</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="200">TypeScript</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="200">
+            <div className='place-content-center flex'>
+                <BiLogoTypescript className="text-5xl flex text-blue-400 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'>TypeScript</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="300">React</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="300">
+            <div className='place-content-center flex'>
+                <FaReact className="text-5xl flex text-rose-400 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'>React</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="400">Next.js</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="400">
+            <div className='place-content-center flex'>
+                <RiNextjsLine className="text-5xl flex text-black place-content-center " />
+            </div>
+                <p className='place-content-center font-semibold flex'>Next.js</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="500">Node.js</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="500">
+            <div className='place-content-center flex'>
+                <DiNodejs className="text-5xl flex text-green-500 place-content-center " />
+            </div>
+                <p className='place-content-center font-semibold flex'>Node.js</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="600">Express.js</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="600">
+            <div className='place-content-center flex'>
+                <SiExpress className="text-5xl flex text-black place-content-center " />
+            </div>
+                <p className='place-content-center font-semibold flex'>Express.js</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="700">MongoDB</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="700">
+            <div className='place-content-center flex'>
+                <BiLogoMongodb className="text-5xl flex text-green-500 place-content-center " />
+            </div>
+                <p className='place-content-center font-semibold flex'>MongoDB</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="800">MySQL</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="800">
+            <div className='place-content-center flex'>
+                <GrMysql  className="text-5xl flex text-orange-500 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'>MySQL</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="900">HTML</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="900">
+            <div className='place-content-center flex'>
+                <FaHtml5 className="text-5xl flex text-purple-500 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'>HTML</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="900">CSS</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="900">
+            <div className='place-content-center flex'>
+                <IoLogoCss3 className="text-5xl flex text-yellow-400 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'>CSS</p>
+            </div>
 
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1000">Tailwind CSS</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1000">
+            <div className='place-content-center flex'>
+                <RiTailwindCssFill className="text-5xl flex text-red-500 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'>Tailwind</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1100">figma</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1100">
+            <div className='place-content-center flex'>
+                <BiLogoFigma className="text-5xl flex text-pink-300 place-content-center " />
+            </div>
+                <p className='place-content-center font-semibold flex'>figma</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1200">Bootstrap</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1200">
+            <div className='place-content-center flex'>
+                <FaBootstrap  className="text-5xl flex text-blue-800 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'>Bootstrap</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1300">Git</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1300">
+            <div className='place-content-center flex'>
+                <FaGitAlt className="text-5xl flex text-yellow-500 place-content-center "/>
+            </div>
+                <p className='place-content-center font-semibold flex'>Git</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1400">VS Code</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1400">
+            <div className='place-content-center flex'>
+                <VscVscode className="text-5xl flex text-blue-400 place-content-center " />
+            </div>
+                <p className='place-content-center font-semibold flex'>VS Code</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1500">PHP</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1500">
+            <div className='place-content-center flex'>
+                <FaPhp className="text-5xl flex text-purple-700 place-content-center " />
+            </div>
+                <p className='place-content-center font-semibold flex'>PHP</p>
+            </div>
                                           
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1700">REST API</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1700">
+            <div className='place-content-center flex'>
+                <AiOutlineApi className="text-5xl flex text-yellow-700 place-content-center " />
+            </div>
+                <p className='place-content-center font-semibold flex'>REST API</p>
+            </div>
                                             
-            <div className="bg-gray-200 px-3 py-1 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1800">DSA</div>
+            <div className="bg-gray-200 px-3 py-3 font-semibold rounded-xl text-sm aos-init" data-aos="fade-up" data-aos-delay="1800">
+            <div className='place-content-center flex'>
+                <MdDataObject className="text-5xl flex text-black place-content-center " />
+            </div>
+                <p className='place-content-center font-semibold flex'>DSA</p>
+            </div>
                                             
             </div>
                                             
