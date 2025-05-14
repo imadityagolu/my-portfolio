@@ -1,6 +1,8 @@
 import MyImage2 from '../my-image-2.jpg'
-import P1 from '../p-1.png';
-import P2 from '../p-2.png';
+import P1 from '../P1.png';
+import P2 from '../P2.png';
+import P3 from '../P3.png';
+import P4 from '../P4.png';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
@@ -38,7 +40,8 @@ function Home(){
         <>
 
     <div id="root">
-        
+    
+    {/* NAVBAR */}
     <nav className="w-full py-4 px-2 sticky bg-transparent backdrop-blur-md top-0 z-50 transition-all duration-300">
     
     <div className="flex justify-between items-center mx-2">
@@ -97,6 +100,7 @@ function Home(){
     
     </nav>
     
+    {/* NAVBAR DROPDOWN */}
     <section className={`md:hidden fixed top-6 left-0 w-full bg-white shadow-md z-50 transition-all duration-500 ease-in-out transform opacity-0 translate-y-10 pointer-events-none" ${
           flag
             ? "opacity-100 translate-y-0"
@@ -125,6 +129,7 @@ function Home(){
     
     </section>
     
+    {/* DETAILS */}
     <div id="home">
 
     <section className="px-1 md:px-15 py-10 w-[100%]">
@@ -212,11 +217,13 @@ function Home(){
     </div>
     
     <div>
-    
+
     <section className="w-full bg-gray-50 flex justify-between items-center px-4 py-10" id="about">
     
     <div className="w-full flex flex-col items-center space-y-6">
         
+    
+    {/* ABOUT ME */}
         <div className="flex flex-col space-y-4 items-center w-full max-w-lg sm:max-w-xl md:max-w-4xl aos-init" data-aos="fade-right" data-aos-delay="500">
 <br></br><br></br>
             <h1 className="text-3xl lg:text-4xl font-semibold">About Me</h1>
@@ -227,7 +234,8 @@ function Home(){
                 
             </div>
         </div>
-                
+    
+    {/* JOURNEY */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             <div className="left flex flex-col space-y-4 w-full md:px-4 aos-init" data-aos="fade-up" data-aos-delay="600">
@@ -261,7 +269,8 @@ function Home(){
             </div>
         
         </div>
-                                    
+    
+    {/* SKILLS */}                      
         <div className="mt-4 w-[90%] aos-init" data-aos="zoom-in" data-aos-delay="500" id="skills">
             
             <h1 className="text-2xl font-bold mb-6 mt-20 text-center">My Skills</h1>
@@ -408,7 +417,8 @@ function Home(){
             <h1 className="text-2xl font-bold mb-4 text-center aos-init" data-aos="fade-up" data-aos-delay="700">What I Do</h1>
                                             
         </div>
-                                            
+    
+    {/* WHAT I DO */}
         <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                                                 
             <div className="flex flex-col gap-4 items-center bg-white border border-gray-300 rounded-lg py-8 px-4 shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="flip-left" data-aos-delay="500">
@@ -496,17 +506,20 @@ function Home(){
                                                                                 
                 </div>
             
-            </div>
         </div>
+
+    </div>
     </section>
     </div>
-                                                                                
-    <div>
-                                                                                    
-    <section className="w-full px-4 py-10" id="projects">
-<br></br>                                           
-    <div className="w-full flex flex-col items-center space-y-6 my-5">
                                                         
+    {/* PROJECTS */}                 
+    <div>                       
+    <section className="w-full px-4 py-10" id="projects">
+
+<br></br>
+
+    <div className="w-full flex flex-col items-center space-y-6 my-5">
+    
     <div className="flex flex-col space-y-4 items-center mb-5 w-full max-w-lg sm:max-w-xl md:max-w-4xl aos-init" data-aos="fade-down" data-aos-delay="100">
                                                         
     <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">My Projects</h1>
@@ -521,82 +534,190 @@ function Home(){
     </div>
                                                             
     </div>
-                                                            
+    
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5">
-                                                                
-                                                                
-    <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="zoom-in-up" data-aos-delay="400">
-                                                                    
-    <a href="#">
-                                                                        
-        <img className="rounded-t-lg w-full h-50 object-center object-cover block" alt="E-Commerce" src={P1} ></img>
-                                                                        
-    </a>
-                                                                        
-    <div className="p-5 space-y-3 md:p-8 flex flex-col">
-                                                                    
-    <a href="#"><h5 className="text-xl font-bold tracking-tight text-gray-900 aos-init" data-aos="fade-up" data-aos-delay="200">E-Commerce Platform</h5></a>
-                                                                    
-    <p className="font-normal text-gray-700 aos-init" data-aos="fade-up" data-aos-delay="300">A full-featured e-commerce platform with product management, cart functionality, and payment integration.</p>
-                                                                    
-                                                                    
-    <div className="flex flex-wrap md:flex-nowrap gap-2 aos-init" data-aos="fade-up" data-aos-delay="300">
-                                                                        
-    <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">React</span>
-                                                                    
-                                                                    
-    <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">Node.js</span>
-                                                                    
-    <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">MongoDB</span>
-                                                                    
-                                                                    
-    <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">Tailwind CSS</span>
-                                                                    
+    
+        <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="zoom-in-up" data-aos-delay="400">
+    
+        <a href="https://amazon-clone-bice-seven.vercel.app/">
+        
+        <img className="rounded-t-lg w-full h-50 object-center object-cover block" alt="Amazone clone E-Commerce" src={P1} ></img>
+        
+        </a>
+        
+        <div className="p-5 space-y-3 md:p-8 flex flex-col">
+        
+        <a href="#"><h5 className="text-xl font-bold tracking-tight text-gray-900 aos-init" data-aos="fade-up" data-aos-delay="200">Amazon Clone</h5></a>
+        
+        <p className="font-normal text-gray-700 aos-init" data-aos="fade-up" data-aos-delay="300">A full-featured amazon cloned e-commerce platform with product management, cart functionality, and payment integration.</p>
+                                                    
+        <div className="flex flex-wrap md:flex-nowrap gap-2 aos-init" data-aos="fade-up" data-aos-delay="300">
+        
+        <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">React.js</span>
+        
+        <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">Firebase</span>
+        
+        <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">Tailwind CSS</span>
+    
     </div>
-                                                                    
+    
     <div className="flex gap-4 aos-init" data-aos="fade-up" data-aos-delay="300">
-                                                                        
-        <a aria-current="page" className="text-center rounded-md flex gap-2 hover:bg-gray-100 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://phone-ecommerce-alpha.vercel.app/" data-discover="true">
-                                                                    
+        
+        <a aria-current="page" className="text-center rounded-md flex gap-2 hover:bg-gray-100 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://amazon-clone-bice-seven.vercel.app/" data-discover="true">
+        
         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                                    
+        
         <path d="M15 3h6v6"></path>
-                                                                    
+        
         <path d="M10 14 21 3"></path>
-                                                                    
+        
         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                                                    
+        
         </svg>
-                                                                    
+        
         <span>Live Demo</span>
         
         </a>
-                                                                    
-        <a aria-current="page" className="text-center hover:bg-gray-100 rounded-md flex gap-2 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://github.com/imadityagolu/phone-ecommerce" data-discover="true">
-                                                                    
+        
+        <a aria-current="page" className="text-center hover:bg-gray-100 rounded-md flex gap-2 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://github.com/imadityagolu/amazon-clone" data-discover="true">
+        
         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                                    
-                                                                    
+        
         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                                                    
-                                                                    
+        
         </svg>
-                                                                    
+        
         <span>Code</span>
-                                                                    
+        
         </a>
-                                                                    
+        
         </div>
-                                                                    
+        
         </div>
-                                                                    
+        
         </div>
-                                                                    
+        
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="zoom-in-up" data-aos-delay="600">
+    
+        <a href="https://book-store-rouge-seven.vercel.app/">
+        
+        <img className="rounded-t-lg w-full h-50 object-center object-cover block" alt="book store" src={P2} ></img>
+        
+        </a>
+        
+        <div className="p-5 space-y-3 md:p-8 flex flex-col">
+        
+        <a href="#"><h5 className="text-xl font-bold tracking-tight text-gray-900 aos-init" data-aos="fade-up" data-aos-delay="200">Book Store</h5></a>
+        
+        <p className="font-normal text-gray-700 aos-init" data-aos="fade-up" data-aos-delay="300">An online book store with variety of books categorized with signup/signin, functionality, and comes with dark mood feature.</p>
+                                                    
+        <div className="flex flex-wrap md:flex-nowrap gap-2 aos-init" data-aos="fade-up" data-aos-delay="300">
+        
+        <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">JavaScript</span>
+        
+        <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">Tailwind CSS</span>
+    
+    </div>
+    
+    <div className="flex gap-4 aos-init" data-aos="fade-up" data-aos-delay="300">
+        
+        <a aria-current="page" className="text-center rounded-md flex gap-2 hover:bg-gray-100 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://book-store-rouge-seven.vercel.app/" data-discover="true">
+        
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        
+        <path d="M15 3h6v6"></path>
+        
+        <path d="M10 14 21 3"></path>
+        
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        
+        </svg>
+        
+        <span>Live Demo</span>
+        
+        </a>
+        
+        <a aria-current="page" className="text-center hover:bg-gray-100 rounded-md flex gap-2 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://github.com/imadityagolu/book-store" data-discover="true">
+        
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        
+        </svg>
+        
+        <span>Code</span>
+        
+        </a>
+        
+        </div>
+        
+        </div>
+        
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="zoom-in-up" data-aos-delay="800">
+    
+        <a href="https://expense-tracker-psi-murex.vercel.app/">
+        
+        <img className="rounded-t-lg w-full h-50 object-center object-cover block" alt="Expence Tracker" src={P3} ></img>
+        
+        </a>
+        
+        <div className="p-5 space-y-3 md:p-8 flex flex-col">
+        
+        <a href="#"><h5 className="text-xl font-bold tracking-tight text-gray-900 aos-init" data-aos="fade-up" data-aos-delay="200">Expence Tracker</h5></a>
+        
+        <p className="font-normal text-gray-700 aos-init" data-aos="fade-up" data-aos-delay="300">A dashboard to manage your daily buying and track its record and expence even on weekly basis and categorized wise. You can also generate CSV and filter by date and categories.</p>
+                                                    
+        <div className="flex flex-wrap md:flex-nowrap gap-2 aos-init" data-aos="fade-up" data-aos-delay="300">
+        
+        <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">React.js CDN</span>
+        
+        <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">Tailwind CSS</span>
+    
+    </div>
+    
+    <div className="flex gap-4 aos-init" data-aos="fade-up" data-aos-delay="300">
+        
+        <a aria-current="page" className="text-center rounded-md flex gap-2 hover:bg-gray-100 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://expense-tracker-psi-murex.vercel.app/" data-discover="true">
+        
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        
+        <path d="M15 3h6v6"></path>
+        
+        <path d="M10 14 21 3"></path>
+        
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        
+        </svg>
+        
+        <span>Live Demo</span>
+        
+        </a>
+        
+        <a aria-current="page" className="text-center hover:bg-gray-100 rounded-md flex gap-2 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://github.com/imadityagolu/expense-tracker" data-discover="true">
+        
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        
+        </svg>
+        
+        <span>Code</span>
+        
+        </a>
+        
+        </div>
+        
+        </div>
+        
+        </div>
+        
+        <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="zoom-in-up" data-aos-delay="1000">
                                                                         
-        <a href="#">
-                                                                        
-            <img className="rounded-t-lg w-full h-50 object-center object-cover block" alt="E-Commerce" src={P2} ></img>
+        <a href="https://meditation-app-iota.vercel.app/">
+        
+            <img className="rounded-t-lg w-full h-50 object-center object-cover block" alt="Meditation Center" src={P4} ></img>
                                                                         
         </a>
                                                                         
@@ -608,197 +729,183 @@ function Home(){
                                                                             
             <div className="flex flex-wrap md:flex-nowrap gap-2 aos-init" data-aos="fade-up" data-aos-delay="400">
                                                             
-            <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">React</span>
-                                                        
-            <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">Node.js</span>
-                                                        
-            <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">MongoDB</span>
-                                                        
+            <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">JavaScript</span>
+
             <span className="bg-gray-200 px-2 text-center text-xs rounded py-1">Tailwind CSS</span>
-                                                        
+            
             </div>
-                                                        
-                                                        
+            
             <div className="flex gap-4 aos-init" data-aos="fade-up" data-aos-delay="400">
-                                                            
+            
             <a aria-current="page" className="text-center rounded-md flex gap-2 hover:bg-gray-100 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://mct-meditation-application.vercel.app/" data-discover="true">
-                                                            
+            
             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                            
+            
             <path d="M15 3h6v6"></path>
-                                                            
+            
             <path d="M10 14 21 3"></path>
-                                                            
+
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                                            
+            
             </svg>
-                                                            
+
             <span>Live Demo</span></a>
-                                                            
+
             <a aria-current="page" className="text-center hover:bg-gray-100 rounded-md flex gap-2 items-center text-[14px] text-gray-900 border border-gray-300 py-1 px-3 active" href="https://github.com/imadityagolu/mct-meditation-application" data-discover="true">
-                                                            
+            
             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                            
+            
             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                                            
+            
             </svg>
-                                                            
+            
             <span>Code</span>
-                                                            
+            
             </a>
-                                                            
+            
             </div>
-                                                            
-            </div>
-                                                            
-            </div>
-                                                            
-            </div>
-                                                            
-            </div>
-                                                            
-        </section>
-                                                            
-            </div>
-                                                            
-                                                            
-            <div>
-                                                                
-                <section className="w-full px-4 py-15 bg-gray-50" id="contact">
+        
+        </div>
+
+        </div>
+                                                    
+    </div>
+    
+    </div>
+    
+    </section>
+    
+    </div>
+
+    {/* GET IN TOUCH */}
+    <div>
+        <section className="w-full px-4 py-15 bg-gray-50" id="contact">
 <br></br>                                           
-                <div className="w-full flex justify-center items-center">
-                                                                    
-                <div className="flex flex-col space-y-4 items-center mb-5 w-full max-w-lg sm:max-w-xl md:max-w-4xl">
-                                                                    
-                <h1 className="text-2xl text-center md:text-3xl lg:text-4xl font-semibold aos-init" data-aos="fade-down" data-aos-delay="0">Get In Touch</h1>
-                                                                
-                <div className="h-1 rounded-lg w-20 bg-black inline-block aos-init" data-aos="fade-up" data-aos-delay="100"></div>
-                                                                
-                <div className="w-full max-wmd sm:max-w-lg md:max-w-2xl aos-init" data-aos="fade-up" data-aos-delay="200">
-                                                                    
-                <p className="text-[16px] text-gray-500 text-center">Have a project in mind or want to discuss potential opportunities? Feel free to reach out using the details below or through my contact information.</p>
-                                                                
+            <div className="w-full flex justify-center items-center">
+                                                                    <div className="flex flex-col space-y-4 items-center mb-5 w-full max-w-lg sm:max-w-xl md:max-w-4xl">
+                                                                        <h1 className="text-2xl text-center md:text-3xl lg:text-4xl font-semibold aos-init" data-aos="fade-down" data-aos-delay="0">Get In Touch</h1>
+                                                                            <div className="h-1 rounded-lg w-20 bg-black inline-block aos-init" data-aos="fade-up" data-aos-delay="100">
+                        </div>
+                                                                            <div className="w-full max-wmd sm:max-w-lg md:max-w-2xl aos-init" data-aos="fade-up" data-aos-delay="200">
+                                                                                <p className="text-[16px] text-gray-500 text-center">Have a project in mind or want to discuss potential opportunities? Feel free to reach out using the details below or through my contact information.</p>
+                            
+                        </div>
+                
                 </div>
-                                                                
-                </div>
-                                                                
-                </div>
-                                                                
-                <div className="space-y-7">
-                                                                    
-                <h1 className="text-2xl font-semibold aos-init" data-aos="fade-right" data-aos-delay="300">Contact Information</h1>
-                                                                
-                <div className="flex items-center gap-4 aos-init" data-aos="zoom-in" data-aos-delay="400">
-                                                                    
-                <span className="bg-gray-200 text-center rounded-full">
-                                                                    
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="text-5xl p-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                                
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                                                
-                <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path>
-                                                                
-                </svg>
-                                                                
-                </span>
-                                                                
-                <div>
-                                                                    
-                <p className="font-semibold">Email</p>
-                                                                
-                <p className="text-gray-500 hover:text-gray-900 cursor-pointer"><a href="mailto:adityasng420.ak@gmail.com">adityasng420.ak@gmail.com</a></p>
-                                                                
-                </div>
-                                                                
-                </div>
-                                                                
-                <div className="flex items-center gap-4 aos-init" data-aos="zoom-in" data-aos-delay="500">
-                                                                    
-                <span className="bg-gray-200 text-center rounded-full">
-                                                                    
-                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" className="text-5xl p-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                                
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                                                
-                </svg>
-                                                                
-                </span>
-                                                                
-                <div>
-                                                                    
-                <p className="font-semibold">Phone</p>
-                                                                
-                <p className="text-gray-500 hover:text-gray-900 cursor-pointer"><a href="tel:+918083079692">+91 80830-79692</a></p>
-                                                                
-                </div>
-                                                                
-                </div>
-                                                                
-                <div className="flex items-center gap-4 aos-init" data-aos="zoom-in" data-aos-delay="600">
-                                                                    
-                <span className="bg-gray-200 text-center rounded-full">
-                                                                    
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="text-5xl p-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                                
-                                                                
-                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0 0 25.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"></path>
-                                                                
-                <circle cx="256" cy="192" r="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle>
-                                                                
-                </svg>
-                                                                
-                </span>
-                                                                
-                <div>
-                                                                    
-                <p className="font-semibold">Location</p>
-                                                                
-                <p className="text-gray-500">Patna, Bihar, India</p>
-                                                                
-                </div>
-                                                                
+
             </div>
-                                                                
+            
+            <div className="space-y-7">
+
+                <h1 className="text-2xl font-semibold aos-init" data-aos="fade-right" data-aos-delay="300">Contact Information</h1>
+
+                <div className="flex items-center gap-4 aos-init" data-aos="zoom-in" data-aos-delay="400">
+                
+                <span className="bg-gray-200 text-center rounded-full">
+                
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="text-5xl p-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                
+                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                
+                <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path>
+                
+                </svg>
+                
+                </span>
+                
+                <div>
+                
+                <p className="font-semibold">Email</p>
+                
+                <p className="text-gray-500 hover:text-gray-900 cursor-pointer"><a href="mailto:adityasng420.ak@gmail.com">adityasng420.ak@gmail.com</a></p>
+                
+                </div>
+
+                </div>
+            
+                <div className="flex items-center gap-4 aos-init" data-aos="zoom-in" data-aos-delay="500">
+                
+                <span className="bg-gray-200 text-center rounded-full">
+                
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" className="text-5xl p-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                
+                </svg>
+                
+                </span>
+                
+                <div>
+                    <p className="font-semibold">Phone</p>
+
+                    <p className="text-gray-500 hover:text-gray-900 cursor-pointer"><a href="tel:+918083079692">+91 80830-79692</a></p>
+
+                </div>
+                
+                </div>
+                
+                <div className="flex items-center gap-4 aos-init" data-aos="zoom-in" data-aos-delay="600">
+                
+                <span className="bg-gray-200 text-center rounded-full">
+                
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="text-5xl p-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                
+                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0 0 25.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"></path>
+                
+                <circle cx="256" cy="192" r="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle>
+                
+                </svg>
+                
+                </span>
+                
+                <div>
+                
+                <p className="font-semibold">Location</p>
+                
+                <p className="text-gray-500">Patna, Bihar, India</p>
+                
+                </div>
+            
+            </div>
+            
             <h1 className="text-2xl font-semibold aos-init" data-aos="fade-right" data-aos-delay="700">Follow Me</h1>
 
-                                                                
             <p data-aos="fade-up" data-aos-delay="800" className="aos-init">Connect with me on social media to stay updated with my latest projects and activities.</p>
-                                                                
+            
             <div className="flex gap-2 aos-init" data-aos="fade-up" data-aos-delay="900">
-                                                                    
+            
             <a className="bg-gray-50 hover:bg-gray-200 text-center rounded-full cursor-pointer" href="https://github.com/imadityagolu" target="blank">
             <FaGithubSquare className="text-4xl" />                       
             </a>
-                                                                
+            
             <a className="bg-gray-50 hover:bg-gray-200 text-center rounded-full cursor-pointer" href="https://www.linkedin.com/in/imadityagolu/" target="blank">
             <FaLinkedin className="text-4xl" />
             </a>
-                                                                
+            
             </div>
-                                                                
+            
             </div>
-                                                                
-            </section>
-                                                                
-            </div>
+            
+        </section>
 
-                                                
-            <footer className="flex w-full py-2 sm:py-4 px-2 bg-gray-50 place-content-center bg-gray-500 text-white">
-                                                                    
-                <div className="flex flex-col md:flex-row justify-between items-center mx-2 mb-5 text-center">
-                                                                  
-                    <div className="text-[14px]  ltr:text-center text-gray-500">
-                                                                        
-                        <p className="text-white pt-5">All rights reserved © 2025 </p>
-                                                                
-                    </div>
-                                                                    
-                </div>
-                                                                    
-            </footer>
-                                                                    
     </div>
-  
+
+    {/* FOOTER */}
+    <footer className="flex w-full py-2 sm:py-4 px-2 bg-gray-50 place-content-center bg-gray-500 text-white">
+            
+        <div className="flex flex-col md:flex-row justify-between items-center mx-2 mb-5 text-center">
+                
+            <div className="text-[14px]  ltr:text-center text-gray-500">
+                    
+                <p className="text-white pt-5">All rights reserved © 2025 </p>
+
+            </div>
+                
+        </div>
+            
+    </footer>
+    
+    </div>
         </>
     );
 }
