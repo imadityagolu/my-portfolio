@@ -87,6 +87,7 @@ function HireMe() {
           Submit
         </button>
         
+        <br></br><br></br>
             <p className="pt-3 text-center text-blue-500 underline"><a href="https://drive.google.com/file/d/1y0c9IHBwKflN3QntGKQDR_HVOg1AQVV1/view">Download my Resume</a></p>
             
       </form>

@@ -46,9 +46,9 @@ function Home(){
     
     <div className="flex justify-between items-center mx-2">
     
-    <span className="md:block hidden cursor-pointer text-2xl font-semibold gradient-text shadow-text ml-3"> Aditya Kumar. </span>
+    <span className="md:block hidden cursor-pointer text-2xl font-semibold gradient-text shadow-text ml-3"><a href="https://imadityagolu.vercel.app/">Aditya Kumar.</a></span>
     
-    <span className="block md:hidden text-2xl cursor-pointer font-semibold gradient-text shadow-text ml-2"> Aditya Kumar </span>
+    <span className="block md:hidden text-2xl cursor-pointer font-semibold gradient-text shadow-text ml-2"><a href="https://imadityagolu.vercel.app/">Aditya Kumar.</a></span>
     
     <ul className="hidden md:flex md:items-center gap-8">
     
@@ -129,7 +129,7 @@ function Home(){
     
     </section>
     
-    {/* DETAILS */}
+    {/* My DETAILS */}
     <div id="home">
 
     <section className="px-1 md:px-15 py-10 w-[100%]">
@@ -225,7 +225,7 @@ function Home(){
     
     {/* ABOUT ME */}
         <div className="flex flex-col space-y-4 items-center w-full max-w-lg sm:max-w-xl md:max-w-4xl aos-init" data-aos="fade-right" data-aos-delay="500">
-<br></br><br></br>
+            <br></br><br></br>
             <h1 className="text-3xl lg:text-4xl font-semibold">About Me</h1>
             
             <div className="h-1 rounded-lg w-20 bg-black inline-block"></div>
@@ -520,6 +520,7 @@ function Home(){
 
     <div className="w-full flex flex-col items-center space-y-6 my-5">
     
+    {/* project description */}
     <div className="flex flex-col space-y-4 items-center mb-5 w-full max-w-lg sm:max-w-xl md:max-w-4xl aos-init" data-aos="fade-down" data-aos-delay="100">
                                                         
     <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">My Projects</h1>
@@ -535,8 +536,10 @@ function Home(){
                                                             
     </div>
     
+    {/* all listed projects*/}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5">
     
+        {/* project 1 */}
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="zoom-in-up" data-aos-delay="400">
     
         <a href="https://amazon-clone-bice-seven.vercel.app/">
@@ -597,6 +600,7 @@ function Home(){
         
         </div>
         
+        {/* project 2 */}
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="zoom-in-up" data-aos-delay="600">
     
         <a href="https://book-store-rouge-seven.vercel.app/">
@@ -655,6 +659,7 @@ function Home(){
         
         </div>
 
+        {/* project 3 */}
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="zoom-in-up" data-aos-delay="800">
     
         <a href="https://expense-tracker-psi-murex.vercel.app/">
@@ -713,6 +718,7 @@ function Home(){
         
         </div>
         
+        {/* project 4 */}
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out aos-init" data-aos="zoom-in-up" data-aos-delay="1000">
                                                                         
         <a href="https://meditation-app-iota.vercel.app/">
@@ -770,11 +776,15 @@ function Home(){
         </div>
                                                     
     </div>
-    
+
+    {/* see all my project button */}
+    <div className='w-full h-15 place-content-center text-center p-2'>
+        <a href="https://imadityagolu.vercel.app/projects.html" className='rounded-xl border-1 bg-gray-200 shadow-xl p-3'>see all of my projects</a>
+    </div>
+
     </div>
     
     </section>
-    
     </div>
 
     {/* GET IN TOUCH */}
